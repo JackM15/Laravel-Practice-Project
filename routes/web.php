@@ -12,9 +12,8 @@
 */
 
 // Homepage Route
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index');
 
 // Test Route
 Route::get('test', 'TestController@index');
+Auth::routes();
